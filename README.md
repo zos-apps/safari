@@ -13,10 +13,27 @@ npm install github:zos-apps/safari
 ## Usage
 
 ```tsx
-import ZSafari from '@zos-apps/safari';
+import App from '@zos-apps/safari';
 
-function App() {
-  return <ZSafari />;
+function MyApp() {
+  return <App />;
+}
+```
+
+## Package Spec
+
+App metadata is defined in `package.json` under the `zos` field:
+
+```json
+{
+  "zos": {
+    "id": "ai.hanzo.safari",
+    "name": "Safari",
+    "icon": "🧭",
+    "category": "productivity",
+    "permissions": ["network"],
+    "installable": true
+  }
 }
 ```
 
