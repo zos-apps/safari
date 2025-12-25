@@ -2,6 +2,7 @@
   "name": "@zos-apps/safari",
   "version": "4.2.0",
   "description": "Web browser with search and navigation",
+  "homepage": "https://zos-apps.github.io/safari",
   "main": "src/index.tsx",
   "types": "src/index.tsx",
   "files": ["src"],
@@ -11,18 +12,35 @@
     "icon": "🧭",
     "category": "productivity",
     "permissions": ["network"],
-    "installable": true
+    "installable": true,
+    "shortcut": "Cmd+S",
+    "menu": {
+      "help": {
+        "documentation": "https://zos-apps.github.io/safari",
+        "reportIssue": "https://github.com/zos-apps/safari/issues"
+      }
+    },
+    "contextMenu": [
+      {"label": "Open", "action": "open"},
+      {"label": "Open in New Window", "action": "openNew"},
+      {"type": "separator"},
+      {"label": "Get Info", "action": "getInfo"},
+      {"label": "Show in Finder", "action": "showInFinder"}
+    ]
   },
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "lucide-react": ">=0.300.0"
   },
-  "keywords": ["zos", "app", "safari"],
+  "keywords": ["zos", "app", "safari", "macos", "desktop"],
   "author": "Hanzo AI",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zos-apps/safari.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/safari/issues"
   }
 }
