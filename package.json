@@ -1,0 +1,77 @@
+{
+  "name": "@zos-apps/safari",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "zos": {
+    "id": "ai.hanzo.safari",
+    "name": "Safari",
+    "icon": "🧭",
+    "category": "utilities",
+    "description": "Web browser",
+    "permissions": [],
+    "window": {
+      "defaultSize": {
+        "width": 1200,
+        "height": 800
+      },
+      "resizable": true
+    },
+    "about": "Web browser",
+    "screenshots": {
+      "hero": "screenshots/hero.png",
+      "images": [
+        "screenshots/1-main.png"
+      ]
+    },
+    "downloads": {
+      "web": "https://zos-apps.github.io/safari"
+    },
+    "featured": true,
+    "tags": [
+      "utilities",
+      "safari"
+    ],
+    "releaseDate": "2025-12-28",
+    "support": "https://github.com/zos-apps/safari/issues",
+    "changelog": "https://github.com/zos-apps/safari/releases"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "description": "Web browser",
+  "homepage": "https://zos-apps.github.io/safari",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/safari.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/safari/issues"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "keywords": [
+    "zos",
+    "app",
+    "safari",
+    "macos",
+    "desktop"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
