@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { ChevronLeft, ChevronRight, RotateCw, Share, Plus, Lock, Search, ExternalLink, Shield, Download, Code, Bug, Layers, Copy, Printer, BookOpen, Star, Home } from 'lucide-react';
+import { useState, useRef, useEffect, useCallback } from 'react';
+import { ChevronLeft, ChevronRight, RotateCw, Share, Plus, Lock, Search, ExternalLink, Shield, Code, Bug, Layers, Copy, Printer, Star, Home } from 'lucide-react';
 
 interface SafariProps {
   onClose: () => void;}
@@ -290,7 +290,7 @@ const generateId = () => Math.random().toString(36).substr(2, 9);
 // Safari Window Component
 // ============================================================================
 
-const Safari: React.FC<SafariProps> = ({ onClose }) => {
+const Safari: React.FC<SafariProps> = ({ onClose: _onClose }) => {
   const createTab = (url = 'https://google.com'): Tab => ({
     id: generateId(),
     url,

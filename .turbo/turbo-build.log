@@ -1,0 +1,17 @@
+
+> @zos-apps/safari@1.0.0 build /Users/z/work/zeekay/zos-apps/safari
+> tsup
+
+CLI Building entry: src/index.tsx
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /Users/z/work/zeekay/zos-apps/safari/tsup.config.ts
+CLI Target: es2022
+CLI Cleaning output folder
+ESM Build start
+ESM dist/index.js     18.38 KB
+ESM dist/index.js.map 47.90 KB
+ESM ⚡️ Build success in 65ms
+DTS Build start
+DTS ⚡️ Build success in 688ms
+DTS dist/index.d.ts 127.00 B
